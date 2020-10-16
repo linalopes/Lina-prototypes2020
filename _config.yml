@@ -1,0 +1,15 @@
+# Site
+title: 'Linas Blog'
+subtitle: 'prototyping some ideas everyday'
+keywords: 'art, techonology, kinetic, wearables'
+
+# URL
+url: 'https://blog.linalopes.info'
+baseurl: ''
+include: ['_pages']
+
+email: 'lina@lilo.zone'
+
+# Build settings
+markdown: kramdown
+port: 7878
