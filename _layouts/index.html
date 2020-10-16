@@ -63,7 +63,7 @@
                         {% for posts in site.data.posts %}
                             {% assign tags = posts.tags | split: "," %}
                         <div class="mix {{ tags }}">
-                            <a href="{{posts.mainLink}}" class="thumb-a" data-fancybox="{{posts.name}}" data-width="1080" data-height="1920" data-caption="<h2>{{posts.name}}</h2><h4>{{posts.date}}</h4><p>{{posts.text}}</p>">
+                            <a href="{{posts.mainLink}}" class="thumb-a" data-fancybox="{{posts.name}}" data-width="1080" data-caption="<h2>{{posts.name}}</h2><h4>{{posts.date}}</h4><p>{{posts.text}}</p>">
                                 <div class="item-hover">
                                     <div class="hover-text"><h3>{{posts.name}}</h3></div>
                                 </div>
@@ -73,7 +73,7 @@
                             </a>
                             {% assign image = posts.links | split: "," %}
                             {% for link in image %}
-                            <a href="{{ link }}" class="thumb-a" data-fancybox="{{posts.name}}" data-width="1080" data-height="1920" data-caption="<h2>{{posts.name}}</h2><h4>{{posts.date}}</h4><p>{{posts.text}}</p>"></a>
+                            <a href="{{ link }}" class="thumb-a" data-fancybox="{{posts.name}}" data-width="1080" data-caption="<h2>{{posts.name}}</h2><h4>{{posts.date}}</h4><p>{{posts.text}}</p>"></a>
                             {% endfor %}
                         </div>
                         {% endfor %}
