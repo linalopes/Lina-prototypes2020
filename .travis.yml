@@ -1,0 +1,14 @@
+language: minimal
+
+notifications:
+  email: false
+
+before_script:
+- wget 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQWK9Ce_1RxzIrjYq3IFz1CgkZRB_w5oNHQZqkIkh3W1BhIujDJ9AnlSrAGUoYmQlB2mZrnOufj8LhI/pub?gid=12792416&single=true&output=csv' -O _data/posts.csv
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: main
